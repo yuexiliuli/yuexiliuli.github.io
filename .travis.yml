@@ -27,7 +27,7 @@ branches:
 # 指定博客的仓库地址
 env:
  global:
-    - GH_REF: git@github.com:yuexiliuli/yuexiliuli.git
+    - GH_REF: git@github.com:yuexiliuli/yuexiliuli.github.io
     #- GE_REF: git@gitee.com:youname/youname.git
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
@@ -38,5 +38,5 @@ after_script:
   - git config user.email "2029403020@qq.com"
   - git add .
   - git commit -m "TravisCI 自动部署"
-  - git push --force --quiet "https://${GE_TOKEN}@${GH_REF}" master:gh-pages
+  - git push --force --quiet "https://${GE_TOKEN}@${GH_REF}" master:master
   - git push --force --quiet "https://${GE_USERNAME}:${GE_PASSWORD}@${GE_REF}" master:master
