@@ -105,9 +105,9 @@ deploy:
   type: git
   repository: 
     #github: git@github.com:yuexiliuli/yuexiliuli.github.io,master
-    github: https://gh_token@github.com/yuexiliuli/yuexiliuli.github.io.git,master
+    #github: https://gh_token@github.com/yuexiliuli/yuexiliuli.github.io.git,master
     #gitee: https://gitee.com/yuexiliuli/yuexiliuli.git,master
-  #branch: master
+  branch: master
 
 
 search:
