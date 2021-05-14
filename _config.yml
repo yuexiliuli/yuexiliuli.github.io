@@ -102,9 +102,13 @@ theme: butterfly #landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repository: 
-    github: git@github.com:yuexiliuli/yuexiliuli.github.io,master
+  - type: git
+  repo: https://gh_token@github.com:yuexiliuli/yuexiliuli.github.io.git
+    branch: master
+  #type: git
+
+  #repository: 
+    #github: git@github.com:yuexiliuli/yuexiliuli.github.io,master
     #gitee: https://gitee.com/yuexiliuli/yuexiliuli.git,master
   #branch: master
 
