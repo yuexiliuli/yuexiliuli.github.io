@@ -14,6 +14,7 @@
     "publish": "npm run clean && npm run deploy",
     "dev": "hexo s",
     "reset": "npm run clean:yuque && npm run sync"
+    
   },
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
