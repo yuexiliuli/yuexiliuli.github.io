@@ -110,7 +110,7 @@ theme: butterfly #landscape
 #   branch: master
 deploy:
   type: git
-  repository: https://github_token@github.com/yuexiliuli/yuexiliuli.github.io.git,master
+  repository: git@github.com:yuexiliuli/yuexiliuli.github.io,master
 
 
 search:
