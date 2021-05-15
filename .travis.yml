@@ -10,10 +10,10 @@ before_install:
   - npm install -g hexo-cli
 
 install:
-  - hexo clean
   - npm install
 
 script:
+  - hexo clean
   - hexo g 
 
 after_script:
