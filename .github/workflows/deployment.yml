@@ -1,9 +1,13 @@
 # 文件路径 .github/workflows/deployment.yml
 name: Deployment
 
-on:
-  push:
-    branches: [hexo] # only push events on source branch trigger deployment
+# on:
+#   push:
+#     branches: [hexo] # only push events on source branch trigger deployment
+  
+# 当有 push 到仓库和外部触发的时候就运行
+on: [push, repository_dispatch]
+
 
 jobs:
   hexo-deployment:
@@ -23,6 +27,8 @@ jobs:
         node-version: '12.x'
 
     - name: Install dependencies & Generate static files
+      env:
+        YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
       run: |
         node -v
         npm i -g hexo-cli
