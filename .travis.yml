@@ -17,14 +17,14 @@ script:
   - hexo g 
 
 after_script:
-  - cd ./public
-  - git init
   - git config user.name "yuexiliuli"
   - git config user.email "1614639905@qq.com"
-  - git add .
-  - git commit -m "TravisCI 自动部署"
-  # Github Pages
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+  - hexo deploy
+
+branches:
+  only:
+    - blog-source
 
 env:
   global:
