@@ -101,12 +101,18 @@ theme: butterfly #landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# deploy:
+#   type: git
+#   repository: https://gh_token@github.com/yuexiliuli/yuexiliuli.github.io.git
+#     #github: git@github.com:yuexiliuli/yuexiliuli.github.io,master
+#     #github: https://gh_token@github.com/yuexiliuli/yuexiliuli.github.io.git,master
+#     #gitee: https://gitee.com/yuexiliuli/yuexiliuli.git,master
+#   branch: master
 deploy:
-  type: git
-  repository: https://gh_token@github.com/yuexiliuli/yuexiliuli.github.io.git
-    #github: git@github.com:yuexiliuli/yuexiliuli.github.io,master
-    #github: https://gh_token@github.com/yuexiliuli/yuexiliuli.github.io.git,master
-    #gitee: https://gitee.com/yuexiliuli/yuexiliuli.git,master
+- type: git
+  #repo: git@github.com:Michael728/michael728.github.io.git
+  #下方的gh_token会被.travis.yml中sed命令替换
+  repo: https://github_token@github.com/yuexiliuli/yuexiliuli.github.io.git
   branch: master
 
 
