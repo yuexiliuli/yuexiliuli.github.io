@@ -3,10 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "yuque-hexo clean && yuque-hexo sync && hexo clean && hexo generate",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
+  },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "https://www.yuque.com/n3bhd5",
+    "repo": "pek5ph",
+    "mdNameFormat": "title",
+    "postPath": "source/_posts",
+    "onlyPublished": false
   },
   "hexo": {
     "version": "5.4.0"
@@ -32,6 +41,7 @@
     "live2d-widget-model-epsilon2_1": "^1.0.5",
     "live2d-widget-model-haru": "^1.0.5",
     "live2d-widget-model-shizuku": "^1.0.5",
-    "live2d-widget-model-tsumiki": "^1.0.5"
+    "live2d-widget-model-tsumiki": "^1.0.5",
+    "yuque-hexo": "^1.7.0"
   }
 }
