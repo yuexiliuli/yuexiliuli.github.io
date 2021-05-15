@@ -4,18 +4,26 @@
   "private": true,
   "scripts": {
     "start": "yuque-hexo clean && yuque-hexo sync && hexo clean && hexo generate",
+    "sync": "yuque-hexo sync",
+    "clean:yuque": "yuque-hexo clean", 
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "deploy": "yuque-hexo sync && hexo deploy",
+    "server": "hexo server",
+
+    "publish": "npm run clean && npm run deploy",
+    "dev": "hexo s",
+    "reset": "npm run clean:yuque && npm run sync"
   },
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
-    "login": "https://www.yuque.com/n3bhd5",
+    "login": "n3bhd5",
     "repo": "pek5ph",
     "mdNameFormat": "title",
     "postPath": "source/_posts",
-    "onlyPublished": false
+    "token": "4XPGivDCnrQp7vfo4tIn3ZvbqHVUn9ygTP062wcL",
+    "onlyPublished": false,
+    "adapter": "hexo"
   },
   "hexo": {
     "version": "5.4.0"
@@ -42,6 +50,9 @@
     "live2d-widget-model-haru": "^1.0.5",
     "live2d-widget-model-shizuku": "^1.0.5",
     "live2d-widget-model-tsumiki": "^1.0.5",
+    "yuque-hexo": "^1.7.0"
+  },
+  "devDependencies": {
     "yuque-hexo": "^1.7.0"
   }
 }

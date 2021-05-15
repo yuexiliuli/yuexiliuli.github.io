@@ -34,9 +34,14 @@ jobs:
         npm i -g hexo-cli
         npm install hexo-renderer-pug hexo-renderer-stylus --save
         npm install yuque-hexo --save 
+        npm i -g yuque-hexo
+        npm i --save-dev yuque-hexo
         npm i
+        yuque-hexo sync
         hexo clean
         hexo g
+
+
     - name: Deploy to Github Pages
       env:
         GIT_NAME: yuexiliuli
