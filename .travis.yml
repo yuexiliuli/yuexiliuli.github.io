@@ -9,7 +9,7 @@ env:
 # 设置钩子只检测blog-source分支的push变动
 branches:
   only:
-    - hexo
+    - blog-source
 
 # 设置缓存文件
 cache:
@@ -36,7 +36,7 @@ before_script:
 script:
   - hexo clean
   - hexo generate
-  - echo ${ENV_TEST}
+  # - echo ${ENV_TEST}
   - hexo deploy
 
 # configure notifications (email, IRC, campfire etc)
