@@ -37,6 +37,7 @@ jobs:
         npm i -g yuque-hexo
         npm i --save-dev yuque-hexo
         npm i
+        npm run start
         yuque-hexo sync
         hexo clean
         hexo g
