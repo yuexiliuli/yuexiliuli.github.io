@@ -110,9 +110,7 @@ theme: butterfly #landscape
 #   branch: master
 deploy:
   type: git
-  #下方的gh_token会被.travis.yml中sed命令替换
-  repository: https://github_token@github.com/yuexiliuli/yuexiliuli.github.io.git
-  branch: master
+  repository: git@github.com:yuexiliuli/yuexiliuli.github.io,master
 
 
 search:
