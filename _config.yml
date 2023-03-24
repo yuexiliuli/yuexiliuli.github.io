@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 个人学习记录
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Yuexiliuli
+language: zh-TW
 timezone: ''
 
 # URL
@@ -110,4 +110,4 @@ search:
   path: ./public/search.xml
   field: post
   format: html
-  limit: 1000
+  limit: 10000
