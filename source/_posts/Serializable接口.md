@@ -2,13 +2,9 @@
 title: Serializable接口
 urlname: ynfztc
 date: '2021-05-15 21:27:15 +0800'
-tags: []
-categories: []
+tags: [Java]
+categories: [Java]
 ---
-
----
-
-## title: Serializable 接口 tags: "Java"
 
 # Serializable 接口
 

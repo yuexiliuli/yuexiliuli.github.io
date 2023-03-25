@@ -2,12 +2,8 @@
 title: SQL Server创建视图
 urlname: ddvy7x
 date: '2021-05-15 21:27:25 +0800'
-tags:
-  - 数据库
-  - SQL
-categories:
-  - 数据库
-  - SQL
+tags: [数据库,SQL]
+categories: [数据库,SQL]
 ---
 
 # [SQL Server 创建视图](https://www.w3cschool.cn/sqlserver/sqlserver-xaz328n3.html)

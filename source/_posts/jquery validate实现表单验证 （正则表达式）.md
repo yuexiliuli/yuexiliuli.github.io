@@ -2,8 +2,8 @@
 title: jquery validate实现表单验证 （正则表达式）
 urlname: upvo9w
 date: '2021-05-13 16:29:30 +0800'
-tags: []
-categories: []
+tags: [JavaScript]
+categories: [JavaScript]
 ---
 
 # 一、目的

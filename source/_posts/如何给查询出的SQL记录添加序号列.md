@@ -2,8 +2,8 @@
 title: 如何给查询出的SQL记录添加序号列
 urlname: hepgd0
 date: '2021-05-15 21:28:34 +0800'
-tags: []
-categories: []
+tags: [SQL]
+categories: [SQL]
 ---
 
 ---

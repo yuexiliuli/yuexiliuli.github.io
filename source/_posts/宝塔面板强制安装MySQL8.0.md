@@ -2,11 +2,8 @@
 title: 宝塔面板强制安装MySQL8.0
 urlname: ptu27t
 date: '2021-05-15 21:28:09 +0800'
-tags:
-  - 数据库
-  - MySQL
-categories:
-  - 数据库
+tags: [数据库,MySQL,宝塔]
+categories: [数据库,MySQL,宝塔]
 ---
 
 # 宝塔面板强制安装 MySQL8.0

@@ -2,11 +2,8 @@
 title: ES6解构赋值
 urlname: ekhewv
 date: '2021-06-21 19:22:00 +0800'
-tags:
-  - JavaScript
-  - ES6
-categories:
-  - JavaScript
+tags: [JavaScript,ES6]
+categories: [JavaScript]
 ---
 
 转载文章：[ES6 解构赋值](https://www.cnblogs.com/xiaohuochai/p/7243166.html)
@@ -589,7 +586,6 @@ console.log(s2 === Boolean.prototype.toString); //true
 let { prop: x } = undefined; // TypeError
 let { prop: y } = null; // TypeError
 ```
-
 
 
 

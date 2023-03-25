@@ -2,12 +2,8 @@
 title: SQL Server创建表语句
 urlname: df434s
 date: '2021-03-17 21:12:45 +0800'
-tags:
-  - 数据库
-  - SQL
-categories:
-  - 数据库
-  - SQL
+tags: [数据库,SQL]
+categories: [数据库,SQL]
 ---
 
 # SQL Server 创建表语句

@@ -2,12 +2,8 @@
 title: SQL Server建立数据库登录账户
 urlname: fr374g
 date: '2021-05-15 21:27:29 +0800'
-tags:
-  - 数据库
-  - SQL
-categories:
-  - 数据库
-  - SQL
+tags: [数据库,SQL]
+categories: [数据库,SQL]
 ---
 
 # 参考：[SQL Server 创建登录用户，授权](https://blog.csdn.net/u012997311/article/details/72630321)

@@ -2,13 +2,9 @@
 title: C++_vector操作
 urlname: rtd32q
 date: '2021-05-15 21:26:38 +0800'
-tags: []
-categories: []
+tags: [C++]
+categories: [C++]
 ---
-
----
-
-## title: C++\_vector 操作 tags: "C++"
 
 # C++\_vector 操作
 

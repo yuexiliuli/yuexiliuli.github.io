@@ -2,13 +2,9 @@
 title: word屏幕配色-豆沙
 urlname: ot93et
 date: '2021-05-15 21:28:04 +0800'
-tags: []
-categories: []
+tags: [word]
+categories: [word]
 ---
-
----
-
-## title: word 屏幕配色-豆沙 tags: "word"
 
 # word 屏幕配色-豆沙
 

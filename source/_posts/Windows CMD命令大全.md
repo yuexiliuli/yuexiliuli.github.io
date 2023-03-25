@@ -2,21 +2,17 @@
 title: Windows CMD命令大全
 urlname: gqvvr0
 date: '2021-05-15 21:27:45 +0800'
-tags: []
-categories: []
+tags: [windows]
+categories: [windows]
 ---
-
----
-
-## title: Windows CMD 命令大全 tags: "windows"
 
 # Windows CMD 命令大全
 
 **命令简介**
 
-​ cmd 是 command 的缩写.即命令行 。
+ cmd 是 command 的缩写.即命令行 。
 
-​ 虽然随着计算机产业的发展，Windows 操作系统的应用越来越广泛，DOS 面临着被淘汰的命运，但是因为它运行安全、稳定，有的用户还在使用，所以一般 Windows 的各种版本都与其兼容，用户可以在 Windows 系统下运行 DOS，中文版 Windows XP 中的命令提示符进一步提高了与 DOS 下操作命令的兼容性，用户可以在命令提示符直接输入中文调用文件。
+ 虽然随着计算机产业的发展，Windows 操作系统的应用越来越广泛，DOS 面临着被淘汰的命运，但是因为它运行安全、稳定，有的用户还在使用，所以一般 Windows 的各种版本都与其兼容，用户可以在 Windows 系统下运行 DOS，中文版 Windows XP 中的命令提示符进一步提高了与 DOS 下操作命令的兼容性，用户可以在命令提示符直接输入中文调用文件。
 
 在 9x 系统下输入 command 就可以打开命令行.而在 NT 系统上可以输入 cmd 来打开，在 windows2003 后被 cmd 替代，利用 CMD 命令查询系统的信息或者是判断网络的好坏。
 

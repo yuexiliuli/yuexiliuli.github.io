@@ -2,13 +2,9 @@
 title: final关键字和static关键字的联系与区别
 urlname: knccc2
 date: '2021-05-15 21:26:48 +0800'
-tags: []
-categories: []
+tags: [Java]
+categories: [Java]
 ---
-
----
-
-## title: final 关键字和 static 关键字的联系与区别 tags: "Java"
 
 # final 关键字和 static 关键字的联系与区别
 

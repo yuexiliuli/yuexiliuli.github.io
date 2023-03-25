@@ -2,13 +2,9 @@
 title: Windows如何查看某个端口被谁占用
 urlname: vz06eb
 date: '2021-05-15 21:27:49 +0800'
-tags: []
-categories: []
+tags: [windows]
+categories: [windows]
 ---
-
----
-
-## title: Windows 如何查看某个端口被谁占用 tags: "windows"
 
 # Windows 如何查看某个端口被谁占用
 

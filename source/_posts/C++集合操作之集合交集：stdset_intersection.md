@@ -2,13 +2,9 @@
 title: C++集合操作之集合交集：stdset_intersection
 urlname: cf2f4g
 date: '2021-05-15 21:26:43 +0800'
-tags: []
-categories: []
+tags: [C]
+categories: [C]
 ---
-
----
-
-## title: C 集合操作之集合交集：std::set_intersectiontags: "C"
 
 # C++集合操作之集合交集：std::set_intersection
 

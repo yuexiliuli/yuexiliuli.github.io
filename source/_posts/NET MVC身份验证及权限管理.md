@@ -2,13 +2,9 @@
 title: NET MVC身份验证及权限管理
 urlname: yr4fng
 date: '2021-05-15 21:27:04 +0800'
-tags: []
-categories: []
+tags: [.NET]
+categories: [.NET]
 ---
-
----
-
-## title: .NET ASP MVC 身份验证及权限管理 tags: ".NET"
 
 # 一、项目结构
 

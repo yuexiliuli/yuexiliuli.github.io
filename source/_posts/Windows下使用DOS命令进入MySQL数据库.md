@@ -2,13 +2,9 @@
 title: Windows下使用DOS命令进入MySQL数据库
 urlname: ymysue
 date: '2021-05-15 21:27:54 +0800'
-tags: []
-categories: []
+tags: [数据库,SQL]
+categories: [数据库,SQL]
 ---
-
----
-
-## title: Windows 下使用 DOS 命令进入 MySQL 数据库 tags: "SQL"
 
 # [Windows 下使用 DOS 命令进入 MySQL 数据库](https://www.cnblogs.com/isme-zjh/p/11400722.html)
 

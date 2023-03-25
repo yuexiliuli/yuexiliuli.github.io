@@ -2,13 +2,9 @@
 title: java使double保留两位小数的多方法
 urlname: yi85r8
 date: '2021-05-15 21:26:58 +0800'
-tags: []
-categories: []
+tags: [Java]
+categories: [Java]
 ---
-
----
-
-## title: java 使 double 保留两位小数的多方法 tags: "Java"
 
 # [java 使 double 保留两位小数的多方法 ](https://www.cnblogs.com/aipan/p/8022312.html)
 

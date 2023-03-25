@@ -2,12 +2,8 @@
 title: 'Sql Server使用TOP实现Limit m,n的功能'
 urlname: rsixmg
 date: '2021-05-15 21:27:34 +0800'
-tags:
-  - 数据库
-  - SQL
-categories:
-  - 数据库
-  - SQL
+tags: [数据库,SQL]
+categories: [数据库,SQL]
 ---
 
 在 MySQL 中，可以用 Limit 来查询第 m 列到第 n 列的记录，例如：

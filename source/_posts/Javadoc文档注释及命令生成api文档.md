@@ -2,13 +2,9 @@
 title: Javadoc文档注释及命令生成api文档
 urlname: bxfqys
 date: '2021-05-15 21:26:53 +0800'
-tags: []
-categories: []
+tags: [Java]
+categories: [Java]
 ---
-
----
-
-## title: Javadoc 文档注释及命令生成 api 文档 tags: "Java"
 
 # Javadoc 文档注释
 
@@ -91,5 +87,3 @@ javadoc -d javaapi -header test -doctitle test1 -version -author Main.java
 ## 查看生成的 api 文件
 
 创建成功之后，就会自动创建指定的文件夹下生成 api 文件。打开 index.html 就是 api 文件的入口，可查看自己编写的代码生成的 api 文档。
-
-![20210318231917.png](https://272y4n7101.goho.co/i/2023/03/22/641adb7536c62.png)

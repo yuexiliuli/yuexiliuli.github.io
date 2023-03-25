@@ -2,13 +2,9 @@
 title: 使用命令行编译java
 urlname: tssuwc
 date: '2021-05-15 21:28:39 +0800'
-tags: []
-categories: []
+tags: [Java]
+categories: [Java]
 ---
-
----
-
-## title: 使用命令行编译 javatags: "Java"
 
 # 使用命令行编译 java
 
