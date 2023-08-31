@@ -1636,9 +1636,9 @@
       </tags>
   </entry>
   <entry>
-    <title>01 </title>
+    <title>01 从计算机结构到汇编程序入门</title>
     <url>/2023/08/31/30day/01%20%E4%BB%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84%E5%88%B0%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<h2 id="00-准备"><a href="#00-准备" class="headerlink" title="00. 准备"></a>00. 准备</h2><ul>
+    <content><![CDATA[<h1 id="00-准备"><a href="#00-准备" class="headerlink" title="00. 准备"></a>00. 准备</h1><ul>
 <li>光盘源码&amp;程序：<a href="https://wwaq.lanzouq.com/ikBJg1702eid">https://wwaq.lanzouq.com/ikBJg1702eid</a></li>
 <li>二进制编辑器：<a href="https://wwaq.lanzouq.com/iCgti1702oje">https://wwaq.lanzouq.com/iCgti1702oje</a></li>
 </ul>
