@@ -1635,4 +1635,98 @@
         <tag>C++</tag>
       </tags>
   </entry>
+  <entry>
+    <title>01 </title>
+    <url>/2023/08/31/30day/01%20%E4%BB%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84%E5%88%B0%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h2 id="00-准备"><a href="#00-准备" class="headerlink" title="00. 准备"></a>00. 准备</h2><ul>
+<li>光盘源码&amp;程序：<a href="https://wwaq.lanzouq.com/ikBJg1702eid">https://wwaq.lanzouq.com/ikBJg1702eid</a></li>
+<li>二进制编辑器：<a href="https://wwaq.lanzouq.com/iCgti1702oje">https://wwaq.lanzouq.com/iCgti1702oje</a></li>
+</ul>
+<h1 id="01-二进制编辑器"><a href="#01-二进制编辑器" class="headerlink" title="01 .二进制编辑器"></a>01 .二进制编辑器</h1><p>在<a href="https://www.vcraft.jp/soft/bz.html">Bz - c.mos (vcraft.jp)</a>下载，解压使用Bz1621.lzh，双击Bz.exe打开二进制编辑器</p>
+<p>输入：0到168000行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">           +0 +1 +2 +3 +4 +5 +6 +7 +8 +9 +A +B +C +D +E +F</span><br><span class="line">0000:0000  EB 4E 90 48 45 4C 4C 4F 49 50 4C 00 02 01 01 00</span><br><span class="line">0000:0010  02 E0 00 40 0B F0 09 00 12 00 02 00 00 00 00 00</span><br><span class="line">0000:0020  40 0B 00 00 00 00 29 FF FF FF FF 48 45 4C 4C 4F</span><br><span class="line">0000:0030  2D 4F 53 20 20 20 46 41 54 31 32 20 20 20 00 00</span><br><span class="line">0000:0040  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</span><br><span class="line">0000:0050  B8 00 00 8E D0 BC 00 7C 8E D8 8E C0 BE 74 7C 8A</span><br><span class="line">0000:0060  04 83 C6 01 3C 00 74 09 B4 0E BB 0F 00 CD 10 EB</span><br><span class="line">0000:0070  EE F4 EB FD 0A 0A 68 65 6C 6C 6F 2C 20 77 6F 72</span><br><span class="line">0000:0080  6C 64 0A 00 00 00 00 00 00 00 00 00 00 00 00 00 </span><br><span class="line">...</span><br><span class="line">0000:01F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 AA</span><br><span class="line">0000:0200  F0 FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00</span><br><span class="line">...</span><br><span class="line">0000:1400  F0 FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00</span><br><span class="line">...</span><br><span class="line">0016:7FF0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</span><br></pre></td></tr></table></figure>
+
+<p>显示：0到168000行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">           0123456789ABCDEF</span><br><span class="line">0000:0000  .N.HELLOIPL.....</span><br><span class="line">0000:0010  ...@............</span><br><span class="line">0000:0020  @.....)....HELLO</span><br><span class="line">0000:0030  -OS   FAT12     </span><br><span class="line">0000:0040  ................</span><br><span class="line">0000:0050  .......l.....tl.</span><br><span class="line">0000:0060  ....&lt;.t.........</span><br><span class="line">0000:0070  ......hello, wor</span><br><span class="line">0000:0080  ld..............</span><br><span class="line">...</span><br><span class="line">0000:01F0  ..............U.</span><br><span class="line">0000:0200  ................</span><br><span class="line">...</span><br><span class="line">0000:1400  ................</span><br><span class="line">...</span><br><span class="line">0016:7FF0  ................</span><br></pre></td></tr></table></figure>
+
+<p>中途或者写完后，可以另存为helloos.img，该文件占用 <strong>1474560（1440*1024）</strong> 字节.</p>
+<p>打开 <strong>tolset</strong> 文件夹，在里面新建 <strong>helloos0</strong> 文件夹，将 <strong>helloos.img</strong> 放入并新建两个文件： <strong>install.bat</strong> 和 <strong>run.bat</strong></p>
+<p>run.bat</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">copy helloos.img ..\z_tools\qemu\fdimage0.bin</span><br><span class="line">..\z_tools\make.exe	-C ../z_tools/qemu</span><br></pre></td></tr></table></figure>
+
+<p>解释：</p>
+<ul>
+<li>第一行 copy：cmd命令 该行将 helloos.img 复制到 qemu 并重命名为 fdimage0.bin</li>
+<li>第二行 运行PC模拟器QEMU，让代码在上面跑，模拟器在光盘里 <strong>.&#x2F;tolset&#x2F;z_tools</strong> 目录下</li>
+</ul>
+<p><strong>install.bat</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">..\z_tools\imgtol.com w a: helloos.img</span><br></pre></td></tr></table></figure>
+
+<p>解释：</p>
+<ul>
+<li>将 <strong>helloos.img</strong> 刻录到软盘 a    w ：写  a：软盘盘符</li>
+</ul>
+<p>双击 <strong>run.bat</strong> 运行显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hello, world</span><br></pre></td></tr></table></figure>
+
+<h1 id="02-仅使用DB和RESB的汇编"><a href="#02-仅使用DB和RESB的汇编" class="headerlink" title="02 .仅使用DB和RESB的汇编"></a>02 .仅使用DB和RESB的汇编</h1><p>汇编代码需要编译，这里采用作者自制的编译器 <strong>nask</strong> </p>
+<h3 id="超长源代码"><a href="#超长源代码" class="headerlink" title="超长源代码"></a>超长源代码</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DB	0xeb, 0x4e, 0x90, 0x48, 0x45, 0x4c, 0x4c, 0x4f</span><br><span class="line">DB	0x49, 0x50, 0x4c, 0x00, 0x02, 0x01, 0x01, 0x00</span><br><span class="line">DB	0x02, 0xe0, 0x00, 0x40, 0x0b, 0xf0, 0x09, 0x00</span><br><span class="line">DB	0x12, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">DB	0x40, 0x0b, 0x00, 0x00, 0x00, 0x00, 0x29, 0xff</span><br><span class="line">...</span><br><span class="line">DB	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00</span><br></pre></td></tr></table></figure>
+
+<p><strong>asm.bat</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">..\z_tools\nask.exe helloos.nas helloos.img</span><br></pre></td></tr></table></figure>
+
+<p>运行上面命令，可以得到 <strong>helloos.img</strong></p>
+<h3 id="使用DB和RESB简化"><a href="#使用DB和RESB简化" class="headerlink" title="使用DB和RESB简化"></a>使用DB和RESB简化</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DB	0xeb, 0x4e, 0x90, 0x48, 0x45, 0x4c, 0x4c, 0x4f</span><br><span class="line">DB	0x49, 0x50, 0x4c, 0x00, 0x02, 0x01, 0x01, 0x00</span><br><span class="line">DB	0x02, 0xe0, 0x00, 0x40, 0x0b, 0xf0, 0x09, 0x00</span><br><span class="line">DB	0x12, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">DB	0x40, 0x0b, 0x00, 0x00, 0x00, 0x00, 0x29, 0xff</span><br><span class="line">DB	0xff, 0xff, 0xff, 0x48, 0x45, 0x4c, 0x4c, 0x4f</span><br><span class="line">DB	0x2d, 0x4f, 0x53, 0x20, 0x20, 0x20, 0x46, 0x41</span><br><span class="line">DB	0x54, 0x31, 0x32, 0x20, 0x20, 0x20, 0x00, 0x00</span><br><span class="line">RESB	16</span><br><span class="line">DB	0xb8, 0x00, 0x00, 0x8e, 0xd0, 0xbc, 0x00, 0x7c</span><br><span class="line">DB	0x8e, 0xd8, 0x8e, 0xc0, 0xbe, 0x74, 0x7c, 0x8a</span><br><span class="line">DB	0x04, 0x83, 0xc6, 0x01, 0x3c, 0x00, 0x74, 0x09</span><br><span class="line">DB	0xb4, 0x0e, 0xbb, 0x0f, 0x00, 0xcd, 0x10, 0xeb</span><br><span class="line">DB	0xee, 0xf4, 0xeb, 0xfd, 0x0a, 0x0a, 0x68, 0x65</span><br><span class="line">DB	0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0x77, 0x6f, 0x72</span><br><span class="line">DB	0x6c, 0x64, 0x0a, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">RESB	368</span><br><span class="line">DB	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x55, 0xaa</span><br><span class="line">DB	0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">RESB	4600</span><br><span class="line">DB	0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">RESB	1469432</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>DB</strong>：往文件里面输入一个字节</li>
+<li><strong>RESB</strong>：”reserve byte”的缩写，<strong>RESB XX</strong> 从现在的地址开始空出 <strong>XX</strong> 个字节，nask编译时把空出的填充为 <strong>0x00</strong></li>
+</ul>
+<h1 id="03-多指令汇编"><a href="#03-多指令汇编" class="headerlink" title="03 .多指令汇编"></a>03 .多指令汇编</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">; hello-os</span><br><span class="line">; TAB=4</span><br><span class="line"></span><br><span class="line">; 以下是标准FAT12格式软盘专用的代码 该段80字节</span><br><span class="line"></span><br><span class="line">		DB		0xeb, 0x4e, 0x90</span><br><span class="line">		DB		&quot;HELLOIPL&quot;		; 启动区的名称可以是任意的字符串（8字节） 0x48, 0x45, 0x4c, 0x4c, 0x4f 0x49, 0x50, 0x4c</span><br><span class="line">		DW		512				; 每个扇区（sector）的大小（必须为512字节） 0x00, 0x02,</span><br><span class="line">		DB		1				; 簇（cluster）的大小（必须为1个扇区） 0x01</span><br><span class="line">		DW		1				; FAT的起始位置（一般从第一个扇区开始） 0x01, 0x00</span><br><span class="line">		DB		2				; FAT的个数 0x02,</span><br><span class="line">		DW		224				; 根目录的大小（一般设成224项） 0xe0, 0x00</span><br><span class="line">		DW		2880			; 该磁盘的大小（必须是2880扇区） 0x40, 0x0b</span><br><span class="line">		DB		0xf0			; 磁盘的种类（必须是0xf0） 0xf0</span><br><span class="line">		DW		9				; FAT的长度（必须是9扇区）0x09, 0x00</span><br><span class="line">		DW		18				; 1个磁道（track）有几个扇区（必须是18）  0x12, 0x00</span><br><span class="line">		DW		2				; 磁头数（必须是2） 0x02, 0x00,</span><br><span class="line">		DD		0				; 不使用分区，必须是0 0x00, 0x00, 0x00, 0x00</span><br><span class="line">		DD		2880			; 重写一次磁盘大小 0x40, 0x0b, 0x00, 0x00,</span><br><span class="line">		DB		0,0,0x29		; 意义不明，固定 0x00, 0x00, 0x29</span><br><span class="line">		DD		0xffffffff		; （可能是）卷标号码 0xff, 0xff, 0xff, 0xff</span><br><span class="line">		DB		&quot;HELLO-OS   &quot;	; 磁盘的名称（11字节） 0x48, 0x45, 0x4c, 0x4c, 0x4f,0x2d, 0x4f, 0x53, 0x20, 0x20, 0x20</span><br><span class="line">		DB		&quot;FAT12   &quot;		; 磁盘格式名称（8字节） 0x46, 0x41, 0x54, 0x31, 0x32, 0x20, 0x20, 0x20</span><br><span class="line">		RESB	18				; 先空出18字节</span><br><span class="line"></span><br><span class="line">; 程序主体 该段36字节</span><br><span class="line"></span><br><span class="line">		DB		0xb8, 0x00, 0x00, 0x8e, 0xd0, 0xbc, 0x00, 0x7c</span><br><span class="line">		DB		0x8e, 0xd8, 0x8e, 0xc0, 0xbe, 0x74, 0x7c, 0x8a</span><br><span class="line">		DB		0x04, 0x83, 0xc6, 0x01, 0x3c, 0x00, 0x74, 0x09</span><br><span class="line">		DB		0xb4, 0x0e, 0xbb, 0x0f, 0x00, 0xcd, 0x10, 0xeb</span><br><span class="line">		DB		0xee, 0xf4, 0xeb, 0xfd</span><br><span class="line"></span><br><span class="line">; 信息显示部分 该段512-36-80字节</span><br><span class="line"></span><br><span class="line">		DB		0x0a, 0x0a		; 2个换行</span><br><span class="line">		DB		&quot;hello,my name is hello-os.this is my first os program.&quot;</span><br><span class="line">		DB		0x0a			; 换行</span><br><span class="line">		DB		0</span><br><span class="line"></span><br><span class="line">		RESB	0x1fe-$			; 填写0x00,直到0x001fe 即510</span><br><span class="line"></span><br><span class="line">		DB		0x55, 0xaa      ; 第511 512字节</span><br><span class="line"></span><br><span class="line">; 以下是启动区以外部分的输出</span><br><span class="line"></span><br><span class="line">		DB		0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">		RESB	4600</span><br><span class="line">		DB		0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</span><br><span class="line">		RESB	1469432</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>DB</strong>：可以直接写字符串</li>
+<li><strong>DW</strong>：”define word” ，写2个字节</li>
+<li><strong>DD</strong>：”define double word”，写4个字节</li>
+<li>第41行，<strong>RESB	0x1fe-$</strong> 美元符号 <strong>$</strong> 是个变量，在该程序中，我们已经在前面输出了<strong>132</strong>个字节，所以这里的 $ 就是<strong>132</strong>，因此 <strong>0x1fe - $</strong> 就是<strong>378</strong> 连续输出<strong>378</strong>个<strong>0x00</strong>。用它是因为要保证第<strong>510</strong>字节开始地址是<strong>55AA</strong>，如果显示信息如 <strong>“hello, world”</strong> 的有长度变化，不用这个 <strong>$</strong> 自动计算，就会出错。</li>
+</ul>
+<h3 id="问题：DB-0xeb-0x4e-0x90-是什么意思？"><a href="#问题：DB-0xeb-0x4e-0x90-是什么意思？" class="headerlink" title="问题：DB 0xeb, 0x4e, 0x90 是什么意思？"></a>问题：DB 0xeb, 0x4e, 0x90 是什么意思？</h3><ul>
+<li><p>可写为 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DB 0xeb, 0x4e</span><br><span class="line">DB 0x90</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>根据day2的代码 上面第一行代码 <strong>DB 0xeb, 0x4e</strong> 被改为了 <strong>JMP entry</strong> ，为什么？</p>
+<blockquote>
+<p><strong>0xeb</strong> 是 x86 汇编指令 <strong>JMP SHORT</strong>，而 <strong>NASK</strong> 汇编把 <strong>JMP SHORT</strong> 简写为 <strong>JMP</strong>，0x90是x86汇编里的 NOP（空指令），也就是说 <strong>0xeb 0x4e 0x90</strong> 和汇编代码 <strong>JMP 0x4e; NOP;</strong> 是等价的</p>
+</blockquote>
+</li>
+<li><p><strong>0x4e</strong> 从哪里来？</p>
+<blockquote>
+<p><strong>0x4e</strong> 是转移的位移量，把书翻到第24页数一下从 <strong>0x90</strong> 开始到第25页的 <strong>resb 18</strong> 一共占的字节数，正好是 <strong>0x4e</strong>（$78_o$）个</p>
+</blockquote>
+</li>
+<li><p>从开头到主体有 <strong>80</strong> 个字节（<strong>0x50</strong>）为什么 <strong>JMP 0x4e</strong>？</p>
+<blockquote>
+<p><strong>0x4e</strong> 是 <strong>0x50-2</strong>。减2是因为 <strong>pc</strong> 指针已经指向了下一句 <strong>NOP</strong> 指令前面，所以偏移量要减去 <strong>JMP</strong> 和 <strong>entry</strong> 的机器码 （<strong>0xeb</strong> 和 <strong>0x4e</strong>） 所占的内存空间</p>
+</blockquote>
+</li>
+<li><p>为什么要 <strong>0x55 0xAA</strong> ?</p>
+<blockquote>
+<p>见书P26末-P27始，计算机读软盘以512字节为单位，软盘512字节为一个扇区，并且读到的第一个扇区为启动扇区，检查第一个扇区最后两个字节是否为<strong>0x55 0xAA</strong> 如果不是则认为无启动程序，报错，是则执行。</p>
+<p>所以，虽然在第一个扇区程序从开头写到 <strong>RESB	0x1fe-$</strong> 写了510个字节，但是加上<strong>0x55 0xAA</strong> 就是512字节，作为启动程序。</p>
+</blockquote>
+</li>
+</ul>
+<p>参考资料：</p>
+<p><a href="https://www.cnblogs.com/yucloud/p/10943215.html">《30天自制操作系统》笔记3 — （Day2 上节）完全解析文件系统</a></p>
+<p><a href="https://tieba.baidu.com/p/1873534487">第一章例子的第一行（DB 0xeb, 0x4e, 0x90）是什么意思？【30天自制操作系统吧】</a></p>
+]]></content>
+      <categories>
+        <category>Operating System</category>
+      </categories>
+      <tags>
+        <tag>System</tag>
+        <tag>Assembly</tag>
+        <tag>Disk</tag>
+      </tags>
+  </entry>
 </search>
